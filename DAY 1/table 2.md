@@ -2,6 +2,8 @@
 
 ![image](https://github.com/user-attachments/assets/b6e65594-74a0-47fd-8b99-95f45ad65715)
 
+- Soln: https://codeshare.io/pAgr19
+
 ## 1. Create Table
 
 ```sql
