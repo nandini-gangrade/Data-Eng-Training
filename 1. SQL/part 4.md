@@ -1,13 +1,16 @@
 # Contents
 
-| Topic                                                                 | Details                                                            |
-|------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [Using an Inner Join](#using-an-inner-join)                           | Joins tables to get matching records from both tables.             |
-| [Using a Left Join](#using-a-left-join)                               | Returns all records from the left table and matching records from the right table. |
-| [Using a Right Join](#using-a-right-join)                             | Returns all records from the right table and matching records from the left table. |
-| [Using a Full Outer Join](#using-a-full-outer-join)                   | Returns all records when there is a match in either left or right table. |
-| [Using a Cross Join](#using-a-cross-join)                             | Produces Cartesian product of both tables, i.e., all possible combinations of rows. |
-| [Joins with GROUP BY and Aggregate Functions](#joins-with-group-by-and-aggregate-functions) | Aggregates data based on groupings and applies functions like COUNT, SUM, AVG. |
+| Topic | Details |
+|-------|---------|
+| [Creating Tables and Inserting Values](#creating-tables-and-inserting-values) | How to create SQL tables and insert data into them. |
+| [Using an Equi Join](#using-an-equi-join) | Joins two tables based on matching values in specified columns. |
+| [Using a Self Join](#using-a-self-join) | Joins a table to itself, useful for hierarchical data. |
+| [Joins with GROUP BY, HAVING, GROUPING SETS](#joins-with-group-by-having-grouping-sets) | Grouping rows and applying aggregate functions, filtering with HAVING. |
+| [Querying Data by Using Subqueries](#querying-data-by-using-subqueries) | Using nested queries to retrieve data based on complex conditions. |
+| [Using the EXISTS, ANY, ALL Keywords](#using-the-exists-any-all-keywords) | Conditional queries that check for existence, any match, or all match. |
+| [Using Nested Subqueries](#using-nested-subqueries) | Subqueries within subqueries for multi-level data filtering. |
+| [Using Correlated Subqueries](#using-correlated-subqueries) | Subqueries that depend on the outer query's row values. |
+| [Using UNION, INTERSECT, EXCEPT, MERGE](#using-union-intersect-except-merge) | Combining, intersecting, or excluding results from multiple queries. |
 
 ---
 
