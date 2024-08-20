@@ -2,14 +2,14 @@
 
 | **Topic**                                      | **Details**                                                                                  |
 |------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Storing Data in a Table](#storing-data-in-a-table)       | Learn how to insert new rows into a table. Includes syntax, explanations, and examples.      |
-| [Updating Data in a Table](#updating-data-in-a-table)     | Understand how to update existing rows in a table. Detailed syntax, explanations, and examples. |
-| [Deleting Data from a Table](#deleting-data-from-a-table) | Instructions for removing rows from a table. Includes syntax, explanations, and examples.     |
-| [Retrieving Specific Attributes](#retrieving-specific-attributes) | How to select specific columns from a table. Includes syntax, explanations, and examples.     |
-| [Retrieving Selected Rows](#retrieving-selected-rows)     | Learn how to select rows based on conditions. Includes syntax, explanations, and examples.    |
-| [Filtering Data: WHERE Clauses](#filtering-data-where-clauses) | Filtering data using the WHERE clause. Includes syntax, explanations, and examples.          |
-| [Filtering Data: IN, DISTINCT, AND, OR, BETWEEN, LIKE](#filtering-data-in-distinct-and-or-between-like) | Advanced filtering options like IN, DISTINCT, AND, OR, BETWEEN, LIKE. Includes syntax, explanations, and examples. |
-| [Column & Table Aliases](#column--table-aliases)          | Using aliases for columns and tables to simplify queries. Includes syntax, explanations, and examples. |
+| [Storing Data in a Table](#1-storing-data-in-a-table)       | Learn how to insert new rows into a table. Includes syntax, explanations, and examples.      |
+| [Updating Data in a Table](#2-updating-data-in-a-table)     | Understand how to update existing rows in a table. Detailed syntax, explanations, and examples. |
+| [Deleting Data from a Table](#3-deleting-data-from-a-table) | Instructions for removing rows from a table. Includes syntax, explanations, and examples.     |
+| [Retrieving Specific Attributes](#4-retrieving-specific-attributes) | How to select specific columns from a table. Includes syntax, explanations, and examples.     |
+| [Retrieving Selected Rows](#5-retrieving-selected-rows)     | Learn how to select rows based on conditions. Includes syntax, explanations, and examples.    |
+| [Filtering Data: WHERE Clauses](#6-filtering-data-where-clauses) | Filtering data using the WHERE clause. Includes syntax, explanations, and examples.          |
+| [Filtering Data: IN, DISTINCT, AND, OR, BETWEEN, LIKE](#7-filtering-data-in-distinct-and-or-between-like) | Advanced filtering options like IN, DISTINCT, AND, OR, BETWEEN, LIKE. Includes syntax, explanations, and examples. |
+| [Column & Table Aliases](#8-column--table-aliases)          | Using aliases for columns and tables to simplify queries. Includes syntax, explanations, and examples. |
 
 ---
 
