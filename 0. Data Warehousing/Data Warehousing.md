@@ -21,7 +21,8 @@ Data Warehouse ka purpose hota hai business intelligence aur data analysis ke li
 
 **Diagram:**
 
-![Data Warehouse Diagram](https://example.com/data-warehouse-diagram.png)
+![image](https://github.com/user-attachments/assets/85cfee7f-bbbf-4a2c-a0cf-0cd206010c8f)
+![image](https://github.com/user-attachments/assets/2c3c7dd7-ec3a-4147-b798-fabb9623471e)
 
 ## 2. **Purpose of Data Warehouse**
 
@@ -32,6 +33,11 @@ Data Warehouse ka main purpose hai enterprise-wide data ko consolidate karna, jo
 - **Centralized Data Storage:** Data Warehouse sabhi departments aur systems se data ko collect karke ek centralized location pe store karta hai.
 - **Historical Analysis:** Yeh past data ko store karke, historical trends aur patterns analyze karne mein help karta hai.
 - **Improved Reporting:** Better and faster reporting capabilities provide karta hai.
+
+**Diagram:**
+
+![image](https://github.com/user-attachments/assets/20e15db0-fc98-49b1-a7ef-2f4bd3c1563d)
+
 
 ## 3. **Data Warehouse Architecture**
 
@@ -48,7 +54,7 @@ Data Warehouse Architecture ek framework hai jo data warehousing ke different co
 
 **Diagram:**
 
-![Data Warehouse Architecture](https://example.com/data-warehouse-architecture-diagram.png)
+![image](https://github.com/user-attachments/assets/369cd19d-ee7d-4f72-b20c-b6fbb69cfceb)
 
 ## 4. **Operational Data Store (ODS)**
 
@@ -61,7 +67,7 @@ Operational Data Store ek database hai jo operational systems se real-time data 
 
 **Diagram:**
 
-![Operational Data Store](https://example.com/ods-diagram.png)
+![image](https://github.com/user-attachments/assets/15abdc84-278d-48bb-9e1b-4ba6411a5c00)
 
 ## 5. **OLTP vs Warehouse Applications**
 
@@ -77,6 +83,8 @@ OLTP (Online Transaction Processing) aur Data Warehousing applications ki functi
   - **Purpose:** Analytical processing aur historical data analysis.
   - **Characteristics:** Complex queries, large data volume, focus on historical data.
   - **Examples:** Business intelligence, reporting systems.
+
+![image](https://github.com/user-attachments/assets/7892dc59-2dad-4ea3-8615-f3af306a7ebd)
 
 **Comparison:**
 
@@ -99,12 +107,14 @@ Data Marts ek subset hote hain data warehouse ka, jo specific business areas ke 
 
 **Diagram:**
 
-![Data Mart Diagram](https://example.com/data-mart-diagram.png)
+![image](https://github.com/user-attachments/assets/db1e0d71-f898-49ec-946f-30f089da2310)
 
 ## 7. **Data Marts vs Data Warehouses**
 
 **Definition:**
 Data Marts aur Data Warehouses dono data storage systems hain, lekin inka scope aur use case alag hota hai.
+
+![image](https://github.com/user-attachments/assets/14f37c80-0b11-43c6-adc9-42419064b09a)
 
 **Comparison:**
 
@@ -130,7 +140,7 @@ Data Warehouse Life Cycle data warehouse ke development aur maintenance process 
 
 **Diagram:**
 
-![Data Warehouse Life Cycle](https://example.com/data-warehouse-lifecycle-diagram.png)
+![image](https://github.com/user-attachments/assets/51fb9021-c3aa-4e23-996c-e95181c493c7)
 
 ## Summary Table
 
