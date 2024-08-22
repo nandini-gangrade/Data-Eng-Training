@@ -1,13 +1,13 @@
 | **Topic**                                     | **Details**                                                                 |
 |-----------------------------------------------|-----------------------------------------------------------------------------|
-| [1-An Introduction to Data Warehousing](#an-introduction-to-data-warehousing) | Overview of data warehousing and its purpose.                                |
-| [2-Purpose of Data Warehouse](#purpose-of-data-warehouse) | Centralized data storage, historical analysis, improved reporting.           |
-| [3-Data Warehouse Architecture](#data-warehouse-architecture) | Framework including data sources, ETL, data warehouse, data marts, and OLAP servers. |
-| [4-Operational Data Store (ODS)](#operational-data-store-ods) | Real-time data storage for operational queries.                              |
-| [5-OLTP vs Warehouse Applications](#oltp-vs-warehouse-applications) | Differences in transaction processing and data warehousing applications.    |
-| [6-Data Marts](#data-marts) | Subsets of data warehouses focused on specific business areas.                |
-| [7-Data Marts vs Data Warehouses](#data-marts-vs-data-warehouses) | Comparison of scope, size, complexity, and access.                          |
-| [8-Data Warehouse Life Cycle](#data-warehouse-life-cycle) | Phases including planning, design, ETL development, implementation, and maintenance. |
+| [1-An Introduction to Data Warehousing](#1-an-introduction-to-data-warehousing) | Overview of data warehousing and its purpose.                                |
+| [2-Purpose of Data Warehouse](#2-purpose-of-data-warehouse) | Centralized data storage, historical analysis, improved reporting.           |
+| [3-Data Warehouse Architecture](#3-data-warehouse-architecture) | Framework including data sources, ETL, data warehouse, data marts, and OLAP servers. |
+| [4-Operational Data Store (ODS)](#4-operational-data-store-ods) | Real-time data storage for operational queries.                              |
+| [5-OLTP vs Warehouse Applications](#5-oltp-vs-warehouse-applications) | Differences in transaction processing and data warehousing applications.    |
+| [6-Data Marts](#6-data-marts) | Subsets of data warehouses focused on specific business areas.                |
+| [7-Data Marts vs Data Warehouses](#7-data-marts-vs-data-warehouses) | Comparison of scope, size, complexity, and access.                          |
+| [8-Data Warehouse Life Cycle](#8-data-warehouse-life-cycle) | Phases including planning, design, ETL development, implementation, and maintenance. |
 
 ---
 
