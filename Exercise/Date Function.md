@@ -14,7 +14,10 @@
 
 #### Query:
 ```sql
-SELECT TIMESTAMPDIFF(MONTH, '1998-04-23', CURDATE()) AS Months_Between_Birthday_And_Now;
+SELECT 
+    '2000-08-15' AS BirthDate,
+    DATEDIFF(MONTH, '2000-08-15', GETDATE()) 
+    - CASE WHEN DAY('2000-08-15') > DAY(GETDATE()) THEN 1 ELSE 0 END AS MonthsFromBirthday;
 ```
 
 #### Output:
