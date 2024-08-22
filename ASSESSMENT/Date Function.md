@@ -92,6 +92,35 @@ Is query mein, hum apni birthday aur current date ke beech mein months ka differ
 
 Yahaan pe output dikhata hai kitne months ho gaye hain birthdate se aaj tak.
 
+In Microsoft SQL Server (MS SQL), the `TIMESTAMPDIFF` function is not directly available. However, you can achieve the same result by using the `DATEDIFF` function in combination with some other functions to calculate the number of months between two dates.
+
+### SQL Server Query
+
+To calculate the number of months between your birthday and the current date:
+
+```sql
+SELECT 
+    '2000-08-15' AS BirthDate,
+    DATEDIFF(MONTH, '2000-08-15', GETDATE()) 
+    - CASE WHEN DAY('2000-08-15') > DAY(GETDATE()) THEN 1 ELSE 0 END AS MonthsFromBirthday;
+```
+
+### Explanation
+
+- **`DATEDIFF(MONTH, '2000-08-15', GETDATE())`**: This part calculates the difference in months between your birthday ('2000-08-15') and the current date (`GETDATE()`).
+  
+- **`CASE WHEN DAY('2000-08-15') > DAY(GETDATE()) THEN 1 ELSE 0 END`**: This subtracts one month if the day of your birthdate is greater than the current day, which adjusts for partial months where the current date hasn't yet reached the birth day.
+
+### Output Table
+
+| **BirthDate** | **MonthsFromBirthday** |
+|---------------|------------------------|
+| 2000-08-15    | 288                      |
+
+- **`X`** will be the total number of months between your birthdate and the current date, adjusted for partial months if necessary.
+
+This method gives you a close approximation to `TIMESTAMPDIFF` in MS SQL Server.
+
 ---
 
 ### 2. **Retrieve All Orders That Were Placed in the Last 30 Days**
