@@ -1,29 +1,36 @@
-# String Function Exercises
+# **Basic SQL String Functions:**
 
-Before diving into the exercises, it's essential to understand the basic SQL string functions that will be used in this exercise:
-
-### **Basic SQL String Functions:**
-- **`UPPER()`**: Converts a string to uppercase.
-- **`SUBSTRING()` or `SUBSTR()`**: Extracts a substring from a string.
-- **`CONCAT()`**: Concatenates two or more strings together.
-- **`REPLACE()`**: Replaces occurrences of a specified string with another string.
-- **`POSITION()` or `INSTR()`**: Finds the position of a substring within a string.
+| **Function**   | **SQL Syntax**                                  | **MS SQL Syntax**                                        | **MySQL Syntax**                                      | **PostgreSQL Syntax**                                |
+|----------------|-------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------|
+| `UPPER`        | `UPPER(column_name)`                            | `UPPER(column_name)`                                     | `UPPER(column_name)`                                  | `UPPER(column_name)`                                 |
+| `SUBSTRING`    | `SUBSTRING(column_name, start, length)`         | `SUBSTRING(column_name, start, length)`                  | `SUBSTRING(column_name, start, length)`               | `SUBSTRING(column_name FROM start FOR length)`       |
+| `CONCAT`       | `CONCAT(string1, string2, ...)`                 | `CONCAT(string1, string2, ...)`                          | `CONCAT(string1, string2, ...)`                       | `CONCAT(string1, string2, ...)`                      |
+| `REPLACE`      | `REPLACE(column_name, 'old', 'new')`            | `REPLACE(column_name, 'old', 'new')`                     | `REPLACE(column_name, 'old', 'new')`                  | `REPLACE(column_name, 'old', 'new')`                 |
+| `POSITION`     | `POSITION('substring' IN column_name)`          | `CHARINDEX('substring', column_name)`                    | `INSTR(column_name, 'substring')`                     | `POSITION('substring' IN column_name)`               |
 
 ### **Explanation of Commands:**
 
-1. **`UPPER(column_name)`**: Converts all characters in the specified column to uppercase.
+1. **`UPPER(column_name)`**: 
+   - *SQL, MS SQL, MySQL, PostgreSQL*: Converts all characters in the specified column to uppercase.
    - *Example*: If `CustomerName` is "John", `UPPER(CustomerName)` will return "JOHN".
-  
-2. **`SUBSTRING(column_name, start_position, length)`**: Extracts a substring from the specified column starting at `start_position` and continuing for `length` characters.
+
+2. **`SUBSTRING(column_name, start, length)`**: 
+   - *SQL, MS SQL, MySQL*: Extracts a substring from the specified column starting at `start` and continuing for `length` characters.
+   - *PostgreSQL*: Extracts a substring using the `FROM` and `FOR` keywords.
    - *Example*: If `ProductName` is "Laptop", `SUBSTRING(ProductName, 1, 3)` will return "Lap".
-  
-3. **`CONCAT(string1, string2, ...)`**: Combines multiple strings into one.
+
+3. **`CONCAT(string1, string2, ...)`**: 
+   - *SQL, MS SQL, MySQL, PostgreSQL*: Combines multiple strings into one.
    - *Example*: `CONCAT('Product-', 'Category')` will return "Product-Category".
-  
-4. **`REPLACE(column_name, 'old_string', 'new_string')`**: Replaces all occurrences of `old_string` in the specified column with `new_string`.
+
+4. **`REPLACE(column_name, 'old', 'new')`**: 
+   - *SQL, MS SQL, MySQL, PostgreSQL*: Replaces all occurrences of `old` in the specified column with `new`.
    - *Example*: If `ProductName` is "Smartphone", `REPLACE(ProductName, 'Phone', 'Device')` will return "SmartDevice".
-  
-5. **`POSITION('substring' IN column_name)`**: Returns the position of the first occurrence of `substring` within the specified column.
+
+5. **`POSITION('substring' IN column_name)`**: 
+   - *SQL, PostgreSQL*: Returns the position of the first occurrence of `substring` within the specified column.
+   - *MS SQL*: Uses `CHARINDEX` instead of `POSITION`.
+   - *MySQL*: Uses `INSTR` to find the position.
    - *Example*: If `CustomerName` is "Anjali", `POSITION('a' IN CustomerName)` will return 2 (the position of the first 'a').
 
 ---
@@ -156,11 +163,11 @@ SELECT REPLACE(ProductName, 'Phone', 'Device') AS Updated_ProductName FROM Produ
 
 #### Query:
 ```sql
-SELECT CustomerName, POSITION('a' IN CustomerName) AS Position_Of_A FROM Products;
+SELECT CustomerName, CHARINDEX('a', CustomerName) AS Position_Of_A FROM Products;
 ```
 
 #### Explanation:
-- *Humne `POSITION()` function ka use kiya taaki hum pata kar sakein ki customer name mein "a" kis position par hai.*
+- *Humne `CHARINDEX()` function ka use kiya taaki hum pata kar sakein ki customer name mein "a" kis position par hai.*
 - *Isse humein string mein specific characters ki position ka pata lagta hai.*
 
 #### Output:
