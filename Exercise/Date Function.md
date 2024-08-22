@@ -32,8 +32,8 @@ SELECT
 #### Query:
 ```sql
 SELECT * 
-FROM Orders 
-WHERE OrderDate >= CURDATE() - INTERVAL 30 DAY;
+FROM Orders
+WHERE OrderDate >= DATEADD(DAY, -30, GETDATE());
 ```
 
 #### Output:
@@ -49,9 +49,9 @@ WHERE OrderDate >= CURDATE() - INTERVAL 30 DAY;
 #### Query:
 ```sql
 SELECT 
-    YEAR(CURDATE()) AS Current_Year, 
-    MONTH(CURDATE()) AS Current_Month, 
-    DAY(CURDATE()) AS Current_Day;
+    YEAR(GETDATE()) AS CurrentYear,
+    MONTH(GETDATE()) AS CurrentMonth,
+    DAY(GETDATE()) AS CurrentDay;
 ```
 
 #### Output:
@@ -65,7 +65,10 @@ SELECT
 
 #### Query:
 ```sql
-SELECT TIMESTAMPDIFF(YEAR, '2000-01-01', '2024-01-01') AS Year_Difference;
+SELECT 
+    '2010-01-01' AS StartDate, 
+    '2020-01-01' AS EndDate,
+    DATEDIFF(YEAR, '2010-01-01', '2020-01-01') AS YearsDifference;
 ```
 
 #### Output:
@@ -79,7 +82,10 @@ SELECT TIMESTAMPDIFF(YEAR, '2000-01-01', '2024-01-01') AS Year_Difference;
 
 #### Query:
 ```sql
-SELECT LAST_DAY('2024-07-15') AS Last_Day_Of_Month;
+SELECT 
+    OrderDate,
+    EOMONTH(OrderDate) AS LastDayOfMonth
+FROM Orders;
 ```
 
 #### Output:
