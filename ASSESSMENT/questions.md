@@ -78,4 +78,4 @@
 
 2. *Find products that are in both the Electronics and Accessories categories using INTERSECT.*
 
-3. **Write a query to find products that are in the E
+3. *Write a query to find products that are in the Except*
