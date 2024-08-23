@@ -180,11 +180,11 @@ GROUP BY c.CategoryName;
 **Query:**
 
 ```sql
-SELECT DATE_FORMAT(OrderDate, '%Y-%m') AS Month, 
+SELECT FORMAT(OrderDate, 'yyyy-MM') AS Month, 
        SUM(p.Price * o.Quantity) AS TotalSales
-FROM Orders o
-JOIN Products p ON o.ProductID = p.ProductID
-GROUP BY DATE_FORMAT(OrderDate, '%Y-%m');
+FROM Ordersss o
+JOIN Productss p ON o.ProductID = p.ProductID
+GROUP BY FORMAT(OrderDate, 'yyyy-MM');
 ```
 
 **Output Table:**
@@ -193,7 +193,10 @@ GROUP BY DATE_FORMAT(OrderDate, '%Y-%m');
 |-----------|----------------|
 | 2024-07   | 5500.00        |
 
-**Explanation**: This query groups the orders by month and calculates the total sales for each month. `DATE_FORMAT(OrderDate, '%Y-%m')` is used to extract the year and month, and `SUM(p.Price * o.Quantity)` calculates the total sales.
+**Explanation**: 
+- Humne FORMAT function use kiya hai MSSQL mein date ko 'yyyy-MM' format mein convert karne ke liye, jo ki saal aur mahine ko represent karta hai.
+- SUM(p.Price * o.Quantity) total sales calculate karne ke liye hai, jahan humne order ki quantity aur product ke price ko multiply kiya hai.
+- GROUP BY FORMAT(OrderDate, 'yyyy-MM') har mahine ke liye grouped results deta hai.
 
 ### 4. Write a query to group products by category and calculate the number of products in each category.
 
