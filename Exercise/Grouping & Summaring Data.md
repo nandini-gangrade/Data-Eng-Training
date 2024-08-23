@@ -79,10 +79,11 @@ GROUP BY CategoryID;
 **Query:**
 
 ```sql
-SELECT EXTRACT(MONTH FROM OrderDate) AS OrderMonth, SUM(Quantity * Price) AS TotalSales
-FROM Orders
-JOIN Products ON Orders.ProductID = Products.ProductID
-GROUP BY EXTRACT(MONTH FROM OrderDate);
+SELECT FORMAT(OrderDate, 'yyyy-MM') AS Month, 
+       SUM(p.Price * o.Quantity) AS TotalSales
+FROM Ordersss o
+JOIN Productss p ON o.ProductID = p.ProductID
+GROUP BY FORMAT(OrderDate, 'yyyy-MM');
 ```
 
 **Output Table:**
