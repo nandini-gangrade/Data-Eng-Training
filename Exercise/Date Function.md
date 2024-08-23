@@ -9,6 +9,7 @@
 | 5           | Simran            | 2024-06-30    | 4000.00    |
 
 ---
+## Exercise
 
 ### 1. Calculate the number of months between your birthday and the current date.
 
