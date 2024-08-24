@@ -213,5 +213,8 @@ SELECT
     c.FirstName,
     c.LastName,
     c.TotalSpent,
-    (c.TotalSpent > (SELECT AvgOrderAmount FROM AverageOrder)) AS AboveAverage
+    CASE
+        WHEN c.TotalSpent > (SELECT AvgOrderAmount FROM AverageOrder) THEN 'Above Average'
+        ELSE 'Below Average'
+    END AS SpendingComparison
 FROM CustomerTotal c;
